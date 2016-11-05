@@ -1,0 +1,137 @@
+//- TODO
+  - fix all references of self intro on this page and on
+  - https://www.getdrip.com/7413888/campaigns/15462499/emails/275711/edit
+
+//- TODO  make this shorter so they preview and convert better
+- var problem = "Forgot to Followup after a Meeting?"
+- var solution = "Always Followup Instantly"
+//- UPDATE THIS!
+- var myurl = "https://example.com/"
+
+doctype html5
+html(dir="ltr" lang="en-US")
+  head
+    <meta charset="utf-8">
+    <title>Instant Followups after Events</title>
+    <meta name="author" content="David Trejo">
+    <meta name="copyright" content="Copyright 2009-2016 David Trejo">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="#{problem} #{solution}">
+    - var myimage = "https://images.unsplash.com/photo-1432821564371-9d3923cd1553?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&h=630&w=1200&fit=crop&txtpad=20&txtalign=center,middle&txtfit=max&txtsize=120&txtlig=1&txtfont=futura%20medium&txtclr=fff&txtshad=10&bm=normal&blend=000&balph=50&txt=Instant%20Followups%20after%20Events"
+    <link rel="canonical" href="#{myurl}">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+    <!-- for Facebook -->
+    meta(property="og:type" content="article")
+    meta(property="og:title" content="#{problem}")
+    meta(property="og:description" content="#{solution}")
+    //- This is an image associated with your media. We suggest that you use an image of at least 1200x630 pixels.
+    meta(property="og:image" content="#{myimage}")
+    meta(property="og:url" content="#{myurl}")
+
+    <!-- for Twitter -->
+    //- via https://dev.twitter.com/cards/types/summary-large-image
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content="@ddtrejo")
+    meta(name="twitter:creator" content="@ddtrejo")
+    meta(name="twitter:title" content="#{problem}")
+    meta(name="twitter:description" content="#{solution}")
+    //- Images for this Card should be at least 280px in width, and at least 150px in height.
+    meta(name="twitter:image" content="#{myimage}")
+
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    //- script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-85614846-1', 'auto');
+      ga('send', 'pageview');
+
+  body.homepage(itemscope="itemscope" itemtype="http://schema.org/WebPage")
+    :markdown
+      # Never Forget to Followup after In-Person Events
+
+      You go to conferences and meetups all the time, and exchange contact information with great prospects.
+      Then, **you fail to email them after the event**.
+
+      You either lose their email in your inbox, or **their business card sits on your desk forever**.
+
+      Stage two sets in: "Oh, I didn't need that lead anyway. **It's too late to email them now,** I don't care about them."
+
+      ## Effortlessly Followup Immediately after You Meet
+
+      I built Self Intro to solve my own problem with follow-ups after face-to-face meetings.
+
+      You fill out dotted lines like I did below, then hit send. (You can't edit or send this demo). I do this immediately after I meet someone, even if it's 1am on hallow's eve.
+
+    .demo(style="max-width: 640px; margin-left: auto; margin-right:auto;box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);-webkit-user-select: none; cursor: no-drop;")
+      .headline(style="background-color:#404040; height: 3rem; line-height: 3rem; padding-left:1rem; color: white;")
+        | New Message
+      .greybox(style="border: 1px solid #cfcfcf;margin-top:0")
+        .subject(style="padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;height: 3rem; line-height: 3rem;")
+          | To: <span style="border-bottom: 1px dotted">jessica@example.com</span>
+        .subject(style="margin-top:0;padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;height: 3rem; line-height: 3rem;")
+          | Subject: David <> <span style="border-bottom: 1px dotted">Jessica</span> from <span style="border-bottom: 1px dotted">Dreamforce</span>
+        .emailbody(style="white-space: pre-wrap;padding-left:1rem;padding-right:1rem; padding-bottom:1rem;border-bottom: 1px solid #cfcfcf;")
+          | Hey <span style="border-bottom: 1px dotted">Jessica</span>,
+          | &nbsp;
+          | It was good meeting you! We were going to talk more about <span style="border-bottom: 1px dotted">hiring sales engineers</span>. Usually the next step would be <span style="border-bottom: 1px dotted">to speak on the phone</span>.
+          | &nbsp;
+          | How does this sound?
+          | &nbsp;
+          | Best,
+          | David Trejo
+          | EngineerOverflow.com
+          | (555) 555-5555
+          | Pick a time: calendly.com/dtrejo
+        .tray(style="background-color:#f5f5f5;height: 3rem; line-height: 3rem; padding-left:1rem;margin-top:0rem; padding-top:1rem")
+          .button(style="display: inline-block; position: relative; display: -moz-inline-box; display: inline-block; -webkit-border-radius: 2px; border-radius: 2px; font-size: 1rem; font-weight: bold; text-align: center; white-space: nowrap; margin-right: 2rem; height: 2rem; line-height: 2rem; min-width: 2rem; outline: 0; padding: 0 1.5rem; -webkit-box-shadow: none;box-shadow: none;background-color: #4d90fe;background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);background-image: linear-gradient(top,#4d90fe,#4787ed);border: 1px solid #3079ed;color: #fff; vertical-align: middle; -webkit-user-select: none;") Send
+
+    :markdown
+      Want one of your own? Keep scrolling.
+
+      Yours,<br>
+      <em>David Trejo</em><br>
+      Consultant to CTOs & Growth for Hiring Software Engineers<br>
+      [EngineerOverflow.com](https://EngineerOverflow.com)<br>
+      Software Engineer
+
+    img.testimonial(src="/images/david-trejo.jpeg" alt="David Trejo"
+        height="150")
+
+    :markdown
+      ## Get Your Invite
+      Your first 3 followups are free. Plans start at $60.00 USD/year.
+
+    form#primarycta(action="https://www.getdrip.com/forms/99735204/submissions" method="post" data-drip-embedded-form="99735204")
+      :markdown
+        Hey David, my name is <input type="text" name="fields[firstname]" value="" placeholder="First Name" />. Send an invite to me at <input type="email" name="fields[email]" value="" placeholder="Email Address" />.
+
+        <input type="submit" name="submit" value="Send Invite Now" class="btn btn-6 btn-6a">
+
+    //- form.demo(action="https://www.getdrip.com/forms/99735204/submissions" method="post" data-drip-embedded-form="99735204" style="max-width: 640px; margin-left: auto; margin-right:auto;box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);-webkit-user-select: none; cursor: no-drop;")
+      .headline(style="background-color:#404040; height: 3rem; line-height: 3rem; padding-left:1rem; color: white;")
+        | New Message
+      .greybox(style="border: 1px solid #cfcfcf;margin-top:0")
+        .subject(style="padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;height: 3rem; line-height: 3rem;")
+          | To: David Trejo
+        .subject(style="margin-top:0;padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;height: 3rem; line-height: 3rem;")
+          | From: <input type="email" name="fields[email]" value="" placeholder="Email Address" />
+        .subject(style="margin-top:0;padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;height: 6rem; line-height: 3rem;")
+          | Subject: David <> <input type="text" name="fields[firstname]" value="" placeholder="First Name" /> from <input type="text" name="fields[event]" value="the alpha signup" placeholder="Event" />
+        .emailbody(style="white-space: pre-wrap;padding-left:1rem;padding-right:1rem; padding-bottom:1rem;border-bottom: 1px solid #cfcfcf;")
+          | Hey <span style="border-bottom: 1px dotted">Jessica</span>,
+          | &nbsp;
+          | It was good meeting you! We were going to talk more about <span style="border-bottom: 1px dotted">hiring sales engineers</span>. Usually the next step would be <span style="border-bottom: 1px dotted">to speak on the phone</span>.
+          | &nbsp;
+          | How does this sound?
+          | &nbsp;
+          | David Trejo
+          | EngineerOverflow.com
+          | (555) 555-5555
+          | Pick a time: calendly.com/dtrejo
+        //- .tray(style="background-color:#f5f5f5;height: 3rem; line-height: 3rem; padding-left:1rem;margin-top:0rem; padding-top:1rem")
+          .button(style="display: inline-block; position: relative; display: -moz-inline-box; display: inline-block; -webkit-border-radius: 2px; border-radius: 2px; font-size: 1rem; font-weight: bold; text-align: center; white-space: nowrap; margin-right: 2rem; height: 2rem; line-height: 2rem; min-width: 2rem; outline: 0; padding: 0 1.5rem; -webkit-box-shadow: none;box-shadow: none;background-color: #4d90fe;background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);background-image: linear-gradient(top,#4d90fe,#4787ed);border: 1px solid #3079ed;color: #fff; vertical-align: middle; -webkit-user-select: none;") Send

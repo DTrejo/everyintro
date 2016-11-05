@@ -65,20 +65,20 @@ html(dir="ltr" lang="en-US")
 
       I built Self Intro to solve my own problem with follow-ups after face-to-face meetings.
 
-      You fill out dotted lines like I did below, then hit send. (You can't edit or send this demo). I do this immediately after I meet someone, even if it's 1am on hallow's eve.
+      You fill out <span style="border-bottom: 1px dotted;">dotted lines</span> like I did below, then hit send. (You can't edit or send this demo). I do this immediately after I meet someone, even if it's 1am on hallow's eve.
 
     .demo(style="max-width: 640px; margin-left: auto; margin-right:auto;box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);-webkit-user-select: none; cursor: no-drop;")
       .headline(style="background-color:#404040; height: 3rem; line-height: 3rem; padding-left:1rem; color: white;")
         | New Message
       .greybox(style="border: 1px solid #cfcfcf;margin-top:0")
-        .subject(style="padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;height: 3rem; line-height: 3rem;")
-          | To: <span style="border-bottom: 1px dotted">jessica@example.com</span>
-        .subject(style="margin-top:0;padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;height: 3rem; line-height: 3rem;")
-          | Subject: David <> <span style="border-bottom: 1px dotted">Jessica</span> from <span style="border-bottom: 1px dotted">Dreamforce</span>
+        .subject(style="padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;min-height: 3rem; line-height: 3rem;")
+          | To: <span style="border-bottom: 1px dotted;">jessica@example.com</span>
+        .subject(style="margin-top:0;padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;min-height: 3rem; line-height: 3rem;")
+          | Subject: David <> <span style="border-bottom: 1px dotted;">Jessica</span> from <span style="border-bottom: 1px dotted;">Dreamforce</span>
         .emailbody(style="white-space: pre-wrap;padding-left:1rem;padding-right:1rem; padding-bottom:1rem;border-bottom: 1px solid #cfcfcf;")
-          | Hey <span style="border-bottom: 1px dotted">Jessica</span>,
+          | Hey <span style="border-bottom: 1px dotted;">Jessica</span>,
           | &nbsp;
-          | It was good meeting you! We were going to talk more about <span style="border-bottom: 1px dotted">hiring sales engineers</span>. Usually the next step would be <span style="border-bottom: 1px dotted">to speak on the phone</span>.
+          | It was good meeting you! We were going to talk more about <span style="border-bottom: 1px dotted;">hiring sales engineers</span>. Usually the next step would be <span style="border-bottom: 1px dotted;">to speak on the phone</span>.
           | &nbsp;
           | How does this sound?
           | &nbsp;
@@ -108,10 +108,16 @@ html(dir="ltr" lang="en-US")
 
     form#primarycta(action="https://www.getdrip.com/forms/99735204/submissions" method="post" data-drip-embedded-form="99735204")
       :markdown
-        Hey David, my name is <input type="text" name="fields[firstname]" value="" placeholder="First Name" />. Send an invite to me at <input type="email" name="fields[email]" value="" placeholder="Email Address" />.
-
+        Hey David, my name is <input type="text" name="fields[firstname]" value="" placeholder="First Name" />
+        <br><br>Send an invite to me at <input type="email" name="fields[email]" value="" placeholder="Email Address" />
+        <br><br>
         <input type="submit" name="submit" value="Send Invite Now" class="btn btn-6 btn-6a">
 
+    :markdown
+      Your email is safe with me. One-click unsubscribe.
+    br
+    br
+    br
     //- form.demo(action="https://www.getdrip.com/forms/99735204/submissions" method="post" data-drip-embedded-form="99735204" style="max-width: 640px; margin-left: auto; margin-right:auto;box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);-webkit-user-select: none; cursor: no-drop;")
       .headline(style="background-color:#404040; height: 3rem; line-height: 3rem; padding-left:1rem; color: white;")
         | New Message

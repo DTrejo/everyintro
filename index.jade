@@ -2,6 +2,8 @@
   - fix all references of self intro on this page and on
   - https://www.getdrip.com/7413888/campaigns/15462499/emails/275711/edit
 
+  Have you ever been given a business card and known you *should've* emailed them? But never did? If so, like this post.
+
 //- TODO  make this shorter so they preview and convert better
 - var problem = "Forgot to Followup after a Meeting?"
 - var solution = "Always Followup Instantly"
@@ -54,6 +56,8 @@ html(dir="ltr" lang="en-US")
     :markdown
       # Never Forget to Followup after In-Person Events
 
+      Have you ever been given a business card and known you **should've** emailed them? But never did?
+
       You go to conferences and meetups all the time, and exchange contact information with great prospects.
       Then, **you fail to email them after the event**.
 
@@ -63,9 +67,12 @@ html(dir="ltr" lang="en-US")
 
       ## Effortlessly Followup Immediately after You Meet
 
-      I built Self Intro to solve my own problem with follow-ups after face-to-face meetings.
+      I built Self Intro to solve my own problem with followups after face-to-face meetings. It enables me to followup immediately after I meet someone, even if it's 1am on hallow's eve.
 
-      You fill out <span style="border-bottom: 1px dotted;">dotted lines</span> like I did below, then hit send. (You can't edit or send this demo). I do this immediately after I meet someone, even if it's 1am on hallow's eve.
+      ## How Does It Work? Here's an Example
+
+      ### Step 1: Fill out the <span style="border-bottom: 1px dotted;">Dotted Lines</span>
+      Imagine you're me, and you've met Jessica. You've already filled out the dotted lines.
 
     .demo(style="max-width: 640px; margin-left: auto; margin-right:auto;box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);-webkit-user-select: none; cursor: no-drop;")
       .headline(style="background-color:#404040; height: 3rem; line-height: 3rem; padding-left:1rem; color: white;")
@@ -89,6 +96,27 @@ html(dir="ltr" lang="en-US")
           | Pick a time: calendly.com/dtrejo
         .tray(style="background-color:#f5f5f5;height: 3rem; line-height: 3rem; padding-left:1rem;margin-top:0rem; padding-top:1rem")
           .button(style="display: inline-block; position: relative; display: -moz-inline-box; display: inline-block; -webkit-border-radius: 2px; border-radius: 2px; font-size: 1rem; font-weight: bold; text-align: center; white-space: nowrap; margin-right: 2rem; height: 2rem; line-height: 2rem; min-width: 2rem; outline: 0; padding: 0 1.5rem; -webkit-box-shadow: none;box-shadow: none;background-color: #4d90fe;background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);background-image: linear-gradient(top,#4d90fe,#4787ed);border: 1px solid #3079ed;color: #fff; vertical-align: middle; -webkit-user-select: none;") Send
+
+    :markdown
+      ### Step 2: Hit Send
+      Your new lead gets an email that looks like this:
+
+    .demo(style="max-width: 640px; margin-left: auto; margin-right:auto;box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);-webkit-user-select: none; cursor: no-drop;")
+      .greybox(style="border: 1px solid #cfcfcf;margin-top:0")
+        .subject(style="margin-top:0;padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;min-height: 3rem; line-height: 3rem;")
+          | David <> Jessica from Dreamforce
+        .emailbody(style="white-space: pre-wrap;padding-left:1rem;padding-right:1rem; padding-bottom:1rem;border-bottom: 1px solid #cfcfcf;")
+          | Hey Jessica,
+          | &nbsp;
+          | It was good meeting you! We were going to talk more about hiring sales engineers. Usually the next step would be to speak on the phone.
+          | &nbsp;
+          | How does this sound?
+          | &nbsp;
+          | Best,
+          | David Trejo
+          | EngineerOverflow.com
+          | (555) 555-5555
+          | Pick a time: calendly.com/dtrejo
 
     :markdown
       Want one of your own? Keep scrolling.
@@ -118,26 +146,3 @@ html(dir="ltr" lang="en-US")
     br
     br
     br
-    //- form.demo(action="https://www.getdrip.com/forms/99735204/submissions" method="post" data-drip-embedded-form="99735204" style="max-width: 640px; margin-left: auto; margin-right:auto;box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);-webkit-user-select: none; cursor: no-drop;")
-      .headline(style="background-color:#404040; height: 3rem; line-height: 3rem; padding-left:1rem; color: white;")
-        | New Message
-      .greybox(style="border: 1px solid #cfcfcf;margin-top:0")
-        .subject(style="padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;height: 3rem; line-height: 3rem;")
-          | To: David Trejo
-        .subject(style="margin-top:0;padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;height: 3rem; line-height: 3rem;")
-          | From: <input type="email" name="fields[email]" value="" placeholder="Email Address" />
-        .subject(style="margin-top:0;padding-left:1rem;padding-right:1rem;border-bottom: 1px solid #cfcfcf;height: 6rem; line-height: 3rem;")
-          | Subject: David <> <input type="text" name="fields[firstname]" value="" placeholder="First Name" /> from <input type="text" name="fields[event]" value="the alpha signup" placeholder="Event" />
-        .emailbody(style="white-space: pre-wrap;padding-left:1rem;padding-right:1rem; padding-bottom:1rem;border-bottom: 1px solid #cfcfcf;")
-          | Hey <span style="border-bottom: 1px dotted">Jessica</span>,
-          | &nbsp;
-          | It was good meeting you! We were going to talk more about <span style="border-bottom: 1px dotted">hiring sales engineers</span>. Usually the next step would be <span style="border-bottom: 1px dotted">to speak on the phone</span>.
-          | &nbsp;
-          | How does this sound?
-          | &nbsp;
-          | David Trejo
-          | EngineerOverflow.com
-          | (555) 555-5555
-          | Pick a time: calendly.com/dtrejo
-        //- .tray(style="background-color:#f5f5f5;height: 3rem; line-height: 3rem; padding-left:1rem;margin-top:0rem; padding-top:1rem")
-          .button(style="display: inline-block; position: relative; display: -moz-inline-box; display: inline-block; -webkit-border-radius: 2px; border-radius: 2px; font-size: 1rem; font-weight: bold; text-align: center; white-space: nowrap; margin-right: 2rem; height: 2rem; line-height: 2rem; min-width: 2rem; outline: 0; padding: 0 1.5rem; -webkit-box-shadow: none;box-shadow: none;background-color: #4d90fe;background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);background-image: linear-gradient(top,#4d90fe,#4787ed);border: 1px solid #3079ed;color: #fff; vertical-align: middle; -webkit-user-select: none;") Send

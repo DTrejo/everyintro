@@ -1,0 +1,25 @@
+{
+  "name": "everyintro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "PORT=9000; open http://localhost:$PORT & harp server public -p $PORT",
+    "compile": "harp compile ./public -o ../www",
+    "buildbranch": "buildbranch gh-pages www",
+    "deploy": "npm run compile && npm run buildbranch",
+    "start": "harp server public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DTrejo/everyintro.git"
+  },
+  "author": "David Trejo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/DTrejo/everyintro/issues"
+  },
+  "homepage": "https://github.com/DTrejo/everyintro#readme",
+  "private": true
+}

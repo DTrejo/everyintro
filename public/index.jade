@@ -5,6 +5,7 @@
 - var problem = "Met a new Prospect?"
 - var solution = "Followup Instantly Afterwards"
 - var extended = "Never drop a lead or forget to email a business card."
+- var title = 'Instant Followups after Events'
 //- UPDATE THIS!
 - var myurl = "https://www.everyintro.com/"
 
@@ -12,7 +13,7 @@ doctype html5
 html(dir="ltr" lang="en-US")
   head
     <meta charset="utf-8">
-    <title>Instant Followups after Events</title>
+    <title>#{title}</title>
     <meta name="author" content="David Trejo">
     <meta name="copyright" content="Copyright 2009-2016 David Trejo">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -30,7 +31,7 @@ html(dir="ltr" lang="en-US")
     meta(property="og:title" content="#{problem}")
     meta(property="og:description" content="#{solution}. #{extended}")
     //- This is an image associated with your media. We suggest that you use an image of at least 1200x630 pixels.
-    meta(property="og:image" content="#{myimage}")
+    meta(property="og:image" content!=myimage)
     meta(property="og:url" content="#{myurl}")
 
     <!-- for Twitter -->
@@ -41,7 +42,7 @@ html(dir="ltr" lang="en-US")
     meta(name="twitter:title" content="#{problem}")
     meta(name="twitter:description" content="#{solution}. #{extended}")
     //- Images for this Card should be at least 280px in width, and at least 150px in height.
-    meta(name="twitter:image" content="#{myimage}")
+    meta(name="twitter:image" content!=myimage)
 
     <link href="style/style.css" rel="stylesheet" type="text/css">
     //- script.
